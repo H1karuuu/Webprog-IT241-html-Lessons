@@ -5,35 +5,33 @@ body {
   background-color: black;
 }
 
+/* MAIN HEADER */
 h1 {
-  color: red; 
+  color: red;
   text-align: center;
   margin-bottom: 30px;
 }
 
+/* MULTIPLE CONTAINERS */
 .container {
   width: 80%;
-  margin: auto;
-  background: #111; /* dark container */
+  margin: 25px auto;
+  background: #111;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255,0,0,0.3); /* soft red glow */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
 }
 
 h2 {
-  color: red; 
-  margin-top: 30px;
-}
-
-h3 {
   color: red;
+  margin-top: 10px;
 }
 
 ul {
   line-height: 1.7;
 }
 
-/* Picture Section */
+/* PROFILE PICTURE AREA */
 .gallery {
   text-align: center;
   margin-top: 40px;
@@ -43,5 +41,5 @@ ul {
   width: 350px;
   height: 350px;
   border-radius: 10px;
-  border: 2px solid red; /* fits theme better */
+  border: 2px solid red;
 }
