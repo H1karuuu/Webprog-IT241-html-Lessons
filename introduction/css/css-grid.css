@@ -1,50 +1,52 @@
+/* GENERAL STYLE */
 body {
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: black;
 }
 
 h1 {
-  color: red;
-  text-align: center;
-  margin-bottom: 30px;
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/* Profile Image */
+h2 {
+    color: red;
+}
+
+/* IMAGE / PROFILE SECTION */
 .gallery {
-  text-align: center;
-  margin-top: 40px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .gallery img {
-  width: 350px;
-  height: 350px;
-  border-radius: 10px;
-  border: 2px solid red;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid red;
 }
 
 /* GRID CONTAINER */
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-  margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    width: 85%;
+    margin: 50px auto;
 }
 
-/* Boxes inside grid */
+/* GRID BOX STYLES */
 .box {
-  background-color: #111;
-  padding: 20px;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
 }
 
-h2 {
-  color: red;
-}
-
+/* TEXT FORMATTING INSIDE BOXES */
 ul {
-  line-height: 1.7;
+    line-height: 1.7;
 }
