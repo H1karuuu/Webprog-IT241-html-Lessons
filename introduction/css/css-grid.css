@@ -29,16 +29,14 @@ h2 {
     border: 2px solid red;
 }
 
-/* GRID CONTAINER */
+/* COMMON GRID BOX STYLE */
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 85%;
     margin: 50px auto;
 }
 
-/* GRID BOXES */
 .box {
     background: #111;
     padding: 20px;
@@ -47,34 +45,24 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* HOVER ANIMATION */
 .box:hover {
     transform: scale(1.03);
     box-shadow: 0 0 18px rgba(255, 0, 0, 0.6);
 }
 
-/* TEXT IN BOXES */
 ul {
     line-height: 1.7;
 }
 
-/* RESPONSIVE BREAKPOINTS */
-
-/* Tablets (2 columns) */
-@media (max-width: 900px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* DIFFERENT GRID LAYOUTS */
+.grid-1 {
+    grid-template-columns: 2fr 1fr; /* About Me wider than Education */
 }
 
-/* Mobile (1 column) */
-@media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
+.grid-2 {
+    grid-template-columns: 1fr 1fr; /* Equal columns */
+}
 
-    .gallery img {
-        width: 280px;
-        height: 280px;
-    }
+.grid-3 {
+    grid-template-columns: 1fr 2fr; /* Goals wider than Hobbies */
 }
