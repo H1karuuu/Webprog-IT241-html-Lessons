@@ -86,7 +86,7 @@ ul {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .grid-1,
     .grid-2,
     .grid-3 {
@@ -100,5 +100,12 @@ ul {
     .gallery img {
         max-width: 280px;
         height: 280px;
+    }
+}
+
+/* Force minimum width for grid items on desktop */
+@media (min-width: 901px) {
+    .container {
+        min-width: 800px;
     }
 }
