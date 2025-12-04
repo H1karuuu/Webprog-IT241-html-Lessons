@@ -5,80 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBPROG IT241</title>
+
+    <!-- Proper Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="bootstrap/bootstrap5.css">
 </head>
 
 <body>
 
-<h1>Personal Profile Web Page</h1>
+<h1 class="text-center text-danger my-4">Personal Profile Web Page</h1>
 
-<!-- Profile / Image Section -->
-<div class="gallery">
-    <h2>Profile</h2>
-    <img src="https://i.pinimg.com/736x/6c/01/03/6c0103febca508ba539e5579617a7c8a.jpg" 
+<!-- Profile Section -->
+<section class="text-center">
+    <h2 class="text-danger">Profile</h2>
+    <img class="profile-img img-fluid"
+         src="https://i.pinimg.com/736x/6c/01/03/6c0103febca508ba539e5579617a7c8a.jpg"
          alt="Mirror Pic">
-</div>
+</section>
 
-<!-- ABOUT ME & EDUCATION GRID -->
-<div class="grid-1 container">
-    <div class="box about-me">
-        <h2>About Me</h2>
-        <p>
-            I am someone who is deeply interested in technology, especially in how new innovations shape the future.
-            I enjoy understanding how things work and continuously learning new IT skills.
-        </p>
-    </div>
+<!-- ABOUT + EDUCATION -->
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <div class="box">
+                <h2>About Me</h2>
+                <p>I am someone who is deeply interested in technology, especially in how new innovations
+                    shape the future. I enjoy understanding how things work and continuously learning new IT skills.</p>
+            </div>
+        </div>
 
-    <div class="box education">
-        <h2>Education / Achievements</h2>
-        <ul>
-            <li>Graduated from National University MOA Campus (Senior High School), Pasay City</li>
-            <li>NU SHS Discount 2024 – 50% Tuition Scholarship</li>
-        </ul>
-    </div>
-</div>
-
-<!-- COURSE & IT EXPERIENCE GRID -->
-<div class="grid-2 container">
-    <div class="box course">
-        <h2>Course</h2>
-        <p>Bachelor of Science in Information Technology</p>
-    </div>
-
-    <div class="box it-experience">
-        <h2>IT Experience</h2>
-        <ul>
-            <li>Building and troubleshooting desktop computers</li>
-            <li>Basic front-end and back-end development</li>
-            <li>Esports gamer (Mobile and PC)</li>
-        </ul>
+        <div class="col-lg-4">
+            <div class="box">
+                <h2>Education / Achievements</h2>
+                <ul>
+                    <li>Graduated from National University MOA Campus (Senior High School), Pasay City</li>
+                    <li>NU SHS Discount 2024 – 50% Tuition Scholarship</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
-<!-- HOBBIES & GOALS GRID -->
-<div class="grid-3 container">
-    <div class="box hobbies">
-        <h2>Hobbies & Interests</h2>
-        <ul>
-            <li>Playing games</li>
-            <li>Walking</li>
-            <li>Studying how machine parts work</li>
-            <li>Chess and other strategy games</li>
-            <li>Listening to various genres of music</li>
-        </ul>
-    </div>
+<!-- COURSE + IT EXPERIENCE -->
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="box">
+                <h2>Course</h2>
+                <p>Bachelor of Science in Information Technology</p>
+            </div>
+        </div>
 
-    <div class="box goals">
-        <h2>Goals in Life / Dream</h2>
-        <ul>
-            <li>Start an IT company specializing in cybersecurity</li>
-            <li>Achieve a sustainable life where "money is just paper"</li>
-            <li>Provide for the people I cherish</li>
-            <li>Become a notable figure in the IT field</li>
-            <li>Build my own company and increase my net worth</li>
-        </ul>
+        <div class="col-lg-6">
+            <div class="box">
+                <h2>IT Experience</h2>
+                <ul>
+                    <li>Building and troubleshooting desktop computers</li>
+                    <li>Basic front-end and back-end development</li>
+                    <li>Esports gamer (Mobile and PC)</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
+
+<!-- HOBBIES + GOALS -->
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="box">
+                <h2>Hobbies & Interests</h2>
+                <ul>
+                    <li>Playing games</li>
+                    <li>Walking</li>
+                    <li>Studying how machine parts work</li>
+                    <li>Chess and other strategy games</li>
+                    <li>Listening to various genres of music</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="box">
+                <h2>Goals in Life / Dream</h2>
+                <ul>
+                    <li>Start an IT company specializing in cybersecurity</li>
+                    <li>Achieve a sustainable life where "money is just paper"</li>
+                    <li>Provide for the people I cherish</li>
+                    <li>Become a notable figure in the IT field</li>
+                    <li>Build my own company and increase my net worth</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
