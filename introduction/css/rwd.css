@@ -72,6 +72,40 @@ ul {
     margin-top: 10px;
 }
 
+/* BUTTON */
+.dark-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.dark-btn:hover {
+    background: #ff4d4d;
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode h1,
+.dark-mode h2 {
+    color: black;
+}
+
+.dark-mode .box {
+    background: #e1e1e1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
 /* DIFFERENT GRID LAYOUTS */
 .grid-1 {
     grid-template-columns: 2fr 1fr;
