@@ -77,17 +77,28 @@ ul {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: red;
+    background: red;          /* Dark mode button color */
     color: white;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
     border: none;
     font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .theme-btn:hover {
     background: #ff4d4d;
+}
+
+/* BUTTON IN LIGHT MODE */
+.light-mode .theme-btn {
+    background: black;        /* Light mode button color */
+    color: white;
+}
+
+.light-mode .theme-btn:hover {
+    background: #333;
 }
 
 /* Light Mode Styles */
@@ -104,7 +115,6 @@ ul {
 .light-mode .box {
     background: #e3e3e3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
-}
 
 
 
