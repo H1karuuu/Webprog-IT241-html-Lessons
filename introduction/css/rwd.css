@@ -24,7 +24,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* PROFILE / IMAGE SECTION */
+/* PROFILE / IMAGE */
 .gallery {
     text-align: center;
     margin: 40px auto;
@@ -40,7 +40,7 @@ h2 {
     border: 2px solid red;
 }
 
-/* COMMON GRID BOX STYLE */
+/* GRID BASE */
 .container {
     display: grid;
     gap: 20px;
@@ -48,12 +48,22 @@ h2 {
     margin: 50px auto;
 }
 
+/* GRID-STYLE */
+.grid-1, .grid-2, .grid-3 {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* SPECIAL WIDTHS */
+.grid-1 { grid-template-columns: 2fr 1fr; } /* About Me wider */
+.grid-3 { grid-template-columns: 1fr 2fr; } /* Goals wider */
+
+/* BOX STYLE */
 .box {
     background: #111;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: 0.2s ease;
 }
 
 .box:hover {
@@ -61,18 +71,13 @@ h2 {
     box-shadow: 0 0 18px rgba(255, 0, 0, 0.6);
 }
 
-.box p {
-    line-height: 1.6;
-    margin-top: 10px;
-}
-
 ul {
-    line-height: 1.8;
     margin-left: 20px;
+    line-height: 1.7;
     margin-top: 10px;
 }
 
-/* THEME MODE TOGGLE BUTTON */
+/* THEME TOGGLE BUTTON */
 .theme-btn {
     position: fixed;
     bottom: 20px;
@@ -84,26 +89,16 @@ ul {
     font-weight: bold;
     background: red;
     color: white;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .theme-btn:hover {
     background: #ff4d4d;
 }
 
-/* Light Mode Button Colors */
-.light-mode .theme-btn {
-    background: black;
-    color: white;
-}
-
-.light-mode .theme-btn:hover {
-    background: #333;
-}
-
-/* Light Mode Styles */
+/* LIGHT MODE STYLES */
 .light-mode {
-    background-color: white;
+    background: white;
     color: black;
 }
 
@@ -114,46 +109,19 @@ ul {
 
 .light-mode .box {
     background: #e3e3e3;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-
-
-/* DIFFERENT GRID LAYOUTS */
-.grid-1 {
-    grid-template-columns: 2fr 1fr;
-}
-
-.grid-2 {
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid-3 {
-    grid-template-columns: 1fr 2fr;
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 900px) {
+/* RESPONSIVE STACK */
+@media (max-width: 700px) {
     .grid-1,
     .grid-2,
     .grid-3 {
         grid-template-columns: 1fr;
     }
 
-    h1 {
-        font-size: 2rem;
-    }
-
     .gallery img {
-        max-width: 280px;
-        height: 280px;
+        max-width: 260px;
+        height: 260px;
     }
-}
-
-/* Force minimum width for grid items on desktop */
-@media (min-width: 901px) {
-    .container {
-        min-width: 800px;
-    }
-
 }
