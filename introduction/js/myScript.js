@@ -1,16 +1,11 @@
-window.addEventListener("load", function () {
-    alert("Welcome to My Personal Profile Page!");
-});
-
-// Dark Mode Toggle
 const toggleBtn = document.getElementById("toggleDark");
 
 toggleBtn.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
-        toggleBtn.textContent = "Light Mode";
-    } else {
+    if (document.body.classList.contains("light-mode")) {
         toggleBtn.textContent = "Dark Mode";
+    } else {
+        toggleBtn.textContent = "Light Mode";
     }
 });

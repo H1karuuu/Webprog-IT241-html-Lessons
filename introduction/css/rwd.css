@@ -72,8 +72,8 @@ ul {
     margin-top: 10px;
 }
 
-/* BUTTON */
-.dark-btn {
+/* THEME-MODE */
+.theme-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -86,24 +86,26 @@ ul {
     font-weight: bold;
 }
 
-.dark-btn:hover {
+.theme-btn:hover {
     background: #ff4d4d;
 }
 
-.dark-mode {
+/* Light Mode Styles */
+.light-mode {
     background-color: white;
     color: black;
 }
 
-.dark-mode h1,
-.dark-mode h2 {
+.light-mode h1,
+.light-mode h2 {
     color: black;
 }
 
-.dark-mode .box {
-    background: #e1e1e1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.light-mode .box {
+    background: #e3e3e3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
 }
+
 
 
 /* DIFFERENT GRID LAYOUTS */
