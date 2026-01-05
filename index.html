@@ -3,83 +3,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Webpage</title>
-
-    <style>
-        body {
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: black;
-        }
-
-        h1 {
-            color: red; 
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            background: #111;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255,0,0,0.3);
-        }
-
-        h2 {
-            color: red; 
-            margin-top: 30px;
-        }
-
-        h3 {
-            color: red;
-        }
-
-        ul {
-            line-height: 1.7;
-        }
-
-        .gallery {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .gallery img {
-            width: 350px;
-            height: 350px;
-            border-radius: 10px;
-            border: 2px solid red;
-        }
-    </style>
+    <title>Personal Portfolio - Jayzee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <h1>My First HTML Webpage</h1>
-
-    <div class="container">
-        <h2>Welcome!</h2>
-        <p>Hello, I'm Jayzee. This is my enhanced webpage using a dark theme with red highlights.</p>
-
-        <h3>About This Page</h3>
-        <p>
-            This page demonstrates a simple HTML structure styled with a black background, red headings, 
-            and white text. The content is placed inside a centered container with a soft red glow effect.
-        </p>
-
-        <h3>Things I Like</h3>
-        <ul>
-            <li>Learning HTML & CSS</li>
-            <li>Creating simple web pages</li>
-            <li>Exploring cool designs</li>
-        </ul>
-
-        <div class="gallery">
-            <img src="https://i.pinimg.com/736x/28/36/ed/2836ed60aa938a17992f5212f9a0c416.jpg" alt="Lego">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">JAYZEE</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#history" class="nav-link">History</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="https://i.pinimg.com/736x/28/36/ed/2836ed60aa938a17992f5212f9a0c416.jpg" alt="Profile Picture" class="profile-image">
+                <div class="image-glow"></div>
+            </div>
+            <h1 class="hero-title">Welcome to My Portfolio</h1>
+            <p class="hero-subtitle">I'm Jayzee</p>
+            <p class="hero-description">IT Student | Technology Enthusiast | Future Cybersecurity Specialist</p>
+            <div class="cta-buttons">
+                <a href="#about" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-content">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am someone who is deeply interested in technology, especially in how new innovations shape the future.
+                            I enjoy understanding how things work, from machine parts to computer systems, and I'm constantly learning
+                            new skills that will help me grow in the IT field.
+                        </p>
+                        <p>
+                            My passion lies in cybersecurity and building innovative solutions. I believe in the power of technology
+                            to transform lives and create opportunities. With a strong foundation in IT and a drive to excel,
+                            I'm working towards establishing my own firm specializing in cybersecurity.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">2024</div>
+                            <div class="stat-label">Graduate Year</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">BSIT</div>
+                            <div class="stat-label">Current Course</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50%</div>
+                            <div class="stat-label">Scholarship</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Personal History</h2>
+            <div class="section-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Education</h3>
+                            <h4>National University MOA Campus</h4>
+                            <p>Graduated from Senior High School in Pasay City</p>
+                            <p class="timeline-detail">Awarded NU SHS Discount 2024 – 50% Tuition Scholarship (excluding miscellaneous fees)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Current Studies</h3>
+                            <h4>Bachelor of Science in Information Technology</h4>
+                            <p>Pursuing my passion for technology and cybersecurity</p>
+                            <p class="timeline-detail">Focusing on front-end and back-end development, computer systems, and security</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>IT Experience</h3>
+                            <h4>Practical Skills Development</h4>
+                            <p>Built hands-on experience through personal projects and gaming</p>
+                            <ul class="timeline-list">
+                                <li>Building and troubleshooting CPUs and desktop computers</li>
+                                <li>Basic front-end and back-end development</li>
+                                <li>Esports gaming on mobile and PC platforms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Interests</h2>
+            <div class="section-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-icon">💻</div>
+                        <h3>Technical Skills</h3>
+                        <ul class="skill-list">
+                            <li>Computer Hardware Assembly & Troubleshooting</li>
+                            <li>Front-end Development (HTML, CSS, JavaScript)</li>
+                            <li>Back-end Development Basics</li>
+                            <li>Desktop Computer Systems</li>
+                            <li>Problem Solving & Critical Thinking</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">🎮</div>
+                        <h3>Gaming & Strategy</h3>
+                        <ul class="skill-list">
+                            <li>Esports Gaming (Mobile & PC)</li>
+                            <li>Chess & Strategy Games</li>
+                            <li>Team Coordination</li>
+                            <li>Quick Decision Making</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">🎯</div>
+                        <h3>Personal Interests</h3>
+                        <ul class="skill-list">
+                            <li>Understanding Machine Parts</li>
+                            <li>Technology Innovation</li>
+                            <li>Music (Various Genres)</li>
+                            <li>Walking & Physical Activity</li>
+                            <li>Continuous Learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Goals & Achievements</h2>
+            <div class="section-content">
+                <div class="goals-container">
+                    <div class="goal-card">
+                        <div class="goal-icon">🔐</div>
+                        <h3>Cybersecurity Firm</h3>
+                        <p>Start an IT firm specializing in cybersecurity solutions and protecting digital assets</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">💼</div>
+                        <h3>Financial Freedom</h3>
+                        <p>Achieve sustainable financial independence where resources enable dreams and opportunities</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">❤️</div>
+                        <h3>Family & Community</h3>
+                        <p>Provide for the people I cherish and create positive impact in my community</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">🏆</div>
+                        <h3>Industry Recognition</h3>
+                        <p>Become a notable figure in the IT industry through innovation and excellence</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">🚀</div>
+                        <h3>Business Growth</h3>
+                        <p>Build and grow a successful company that creates value and employment opportunities</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">🎓</div>
+                        <h3>Scholarship Achievement</h3>
+                        <p>Received NU SHS 50% Tuition Scholarship for academic excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-content">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always open to discussing new opportunities, collaborations, or just having a conversation about technology and innovation.</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>jayzee@example.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <p>+63 XXX XXX XXXX</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Pasay City, Philippines</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Resources & Credits</h2>
+            <div class="section-content">
+                <div class="resources-grid">
+                    <div class="resource-category">
+                        <h3>Fonts</h3>
+                        <ul>
+                            <li><a href="https://fonts.google.com/specimen/Orbitron" target="_blank" rel="noopener">Orbitron - Google Fonts</a></li>
+                            <li><a href="https://fonts.google.com/specimen/Rajdhani" target="_blank" rel="noopener">Rajdhani - Google Fonts</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-category">
+                        <h3>Images</h3>
+                        <ul>
+                            <li><a href="https://www.pinterest.com" target="_blank" rel="noopener">Profile Images - Pinterest</a></li>
+                            <li>All images used are for educational purposes</li>
+                        </ul>
+                    </div>
+                    <div class="resource-category">
+                        <h3>Development</h3>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>Responsive Design Principles</li>
+                            <li>AI-assisted code generation and optimization</li>
+                            <li>Modern web development best practices</li>
+                        </ul>
+                    </div>
+                    <div class="resource-category">
+                        <h3>AI Assistance</h3>
+                        <ul>
+                            <li>This project was created with AI assistance for code generation</li>
+                            <li>AI helped with structure, styling, and responsive design implementation</li>
+                            <li>Custom modifications and content by Jayzee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jayzee. All rights reserved.</p>
+            <p>Built with passion for technology and innovation</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
